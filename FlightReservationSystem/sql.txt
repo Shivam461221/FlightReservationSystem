@@ -42,7 +42,7 @@ CREATE INDEX idx_user_id ON Booking(user_id);
 CREATE INDEX idx_flight_id ON Booking(flight_id);
 
 
-(Insert some flight data manually)
+-- Insert some flight data manually
 
 -- Mumbai to Delhi flight
 INSERT INTO Flight (flightNumber, origin, destination, departureDate, departureTime)
