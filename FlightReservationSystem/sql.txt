@@ -247,3 +247,15 @@ VALUES ('6E150', 'Indore', 'Patna', '2025-01-09', '2025-01-09 19:15:00');
 -- Indore to Dehradun flight
 INSERT INTO Flight (flightNumber, origin, destination, departureDate, departureTime)
 VALUES ('SG151', 'Indore', 'Dehradun', '2025-01-10', '2025-01-10 07:45:00');
+
+
+-------------------------------------------------------------------------
+
+Check_in DB
+
+CREATE TABLE check_in (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    booking_id BIGINT NOT NULL,
+    number_of_bags VARCHAR(255),
+    check_in_time DATETIME
+);
