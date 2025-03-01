@@ -34,7 +34,7 @@ CREATE TABLE booking (
     booking_date DATE NOT NULL,
     seat_number VARCHAR(100) NOT NULL,			
     
-    FOREIGN KEY (user_id) REFERENCES sser(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
     FOREIGN KEY (flight_id) REFERENCES flight(id) ON DELETE CASCADE
 );
 
@@ -42,7 +42,7 @@ CREATE INDEX idx_user_id ON booking(user_id);
 CREATE INDEX idx_flight_id ON booking(flight_id);
 
 
-(Insert some flight data manually)
+--(Insert some flight data manually)
 
 -- Mumbai to Delhi flight
 INSERT INTO flight (flight_number, origin, destination, departure_date, departure_time)
